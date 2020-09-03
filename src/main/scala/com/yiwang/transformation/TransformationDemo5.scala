@@ -29,7 +29,7 @@ object TransformationDemo5 {
 
      //repartitionAndSortWithinPartitions是repartition算子的一个变种
     // 官方建议在使用完repartition算子重新分区之后,还需要进行排序
-     //既可以重新分区有可以进行排序
+     //既可以重新分区又可以进行排序
     //这个算子只能对元组进行排序
       val rdd3 = sc.parallelize(List((3,"cc"),(4,"bb"),(1,"aa")),2)
       rdd3.repartitionAndSortWithinPartitions(new HashPartitioner(1)).foreach(println)
