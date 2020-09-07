@@ -21,5 +21,11 @@ object OtherDemo1 {
     //过滤并返回指定范围（包括开始和结束的，相当于between）
     val ranges: RDD[(String, Int)] = rdd1.filterByRange("a","c")
     println(ranges.collect().toBuffer)
+
+    //flatMap -> 遍历集合扁平化处理
+    //flatMapValues -> 对存在的元组中的value进行扁平化处理
+    val rdd3: RDD[(String, String)] = sc.parallelize(List(("a","1 2"),("b", "3 4")))
+    val rdd3_1: RDD[(String, String)] = rdd3.flatMapValues(_.split(" "))
+    println(rdd3_1.collect().toList)
   }
 }
