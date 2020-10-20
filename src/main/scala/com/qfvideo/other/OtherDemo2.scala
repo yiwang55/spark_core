@@ -1,4 +1,4 @@
-package com.yiwang.other
+package com.qfvideo.other
 
 import org.apache.spark.{SparkConf, SparkContext}
 

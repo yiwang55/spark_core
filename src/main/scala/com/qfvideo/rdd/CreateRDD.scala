@@ -1,4 +1,4 @@
-package com.yiwang.rdd
+package com.qfvideo.rdd
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}

@@ -1,4 +1,4 @@
-package com.yiwang.transformation
+package com.qfvideo.transformation
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
