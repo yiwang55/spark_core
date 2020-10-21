@@ -3,7 +3,8 @@ package com.bilibili.practice
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Demo1 {
+//1. 统计每个省份的点击top3的广告id
+object Demo38 {
 
   def main(args: Array[String]): Unit = {
     //1. 获取入口
